@@ -15,7 +15,7 @@ tab1, tab2 = st.tabs(['📊  Univariate Analysis','📈 Bi/multi-variate Analysi
 url = "https://raw.githubusercontent.com/MohamedHeshamrg/USA-Accidents/c9d2ccc55db9f9a747b3208d1c74dd08edef0d16/multipage/sample.csv"
 df = pd.read_csv(url, encoding='utf-8')
 
-df = load_data()
+
 with tab1:
     st.markdown('<h3 style="text-align: center; color : MediumAquaMarine;">Distribution of Numerical features</h3>', unsafe_allow_html=True)
     
