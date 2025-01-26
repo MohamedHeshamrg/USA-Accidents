@@ -9,11 +9,10 @@ st.set_page_config(
     page_icon='🚗🚨'
 )
 
-@st.cache_data
-def load_data():
-    return pd.read_csv("sample.csv")  # or "../sample.csv"
+url = "https://github.com/MohamedHeshamrg/USA-Accidents/blob/c9d2ccc55db9f9a747b3208d1c74dd08edef0d16/multipage/sample.csv"
+df = pd.read_csv(url) 
 
-df = load_data()
+
 num_stats = df.describe()
 cat_stats = df.describe(include='O')
 
