@@ -10,7 +10,7 @@ st.set_page_config(
 )
 
 url = "https://github.com/MohamedHeshamrg/USA-Accidents/blob/c9d2ccc55db9f9a747b3208d1c74dd08edef0d16/multipage/sample.csv"
-df = pd.read_csv(url, error_bad_lines=False, encoding='utf-8')
+df = pd.read_csv(url, encoding='utf-8')
 
 
 num_stats = df.describe()
