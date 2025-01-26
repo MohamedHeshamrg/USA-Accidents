@@ -10,8 +10,10 @@ st.set_page_config(
 
 tab1, tab2 = st.tabs(['📊  Univariate Analysis','📈 Bi/multi-variate Analysis '])
 
-url = "https://github.com/MohamedHeshamrg/USA-Accidents/blob/c9d2ccc55db9f9a747b3208d1c74dd08edef0d16/multipage/sample.csv"
-df = pd.read_csv(url, error_bad_lines=False, encoding='utf-8')
+
+
+url = "https://raw.githubusercontent.com/MohamedHeshamrg/USA-Accidents/c9d2ccc55db9f9a747b3208d1c74dd08edef0d16/multipage/sample.csv"
+df = pd.read_csv(url, encoding='utf-8')
 
 df = load_data()
 with tab1:
