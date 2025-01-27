@@ -38,4 +38,4 @@ with tab2:
 
     with col3:
         st.subheader('Categorical Descriptive Statistics')
-        st.dataframe(cat_stats.T, height=1000)
+        st.dataframe(cat_stats.T, height=800)
