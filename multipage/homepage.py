@@ -25,7 +25,7 @@ st.markdown('<h1 style="text-align: center; color: cyan;">Home Page For US-Accid
 tab1, tab2 = st.tabs(["🗓️ Data", '📈 Descriptive Stats'])
 
 with tab1:
-    col1, col2, col3 = st.columns([3, 4, 3])
+    col1, col2, col3 = st.columns([1, 4, 1])
     with col2:
         st.markdown('<h3 style="text-align: center; color: MediumAquaMarine;">Dataset</h3>', unsafe_allow_html=True)
         st.dataframe(df.head(2000), height=800)
@@ -34,8 +34,8 @@ with tab2:
     col1, col2, col3 = st.columns([6, 0.5, 6])
     with col1:
         st.subheader('Numerical Descriptive Statistics')
-        st.dataframe(num_stats.T, height=150)
+        st.dataframe(num_stats.T, height=500)
 
     with col3:
         st.subheader('Categorical Descriptive Statistics')
-        st.dataframe(cat_stats.T, height=200)
+        st.dataframe(cat_stats.T, height=1000)
